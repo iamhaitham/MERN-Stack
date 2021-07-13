@@ -6,9 +6,9 @@ class PersonCard extends Component {
         return ( <
             >
             <
-            h1 > { lastName }, { firstName } < /h1>  <
-            p > Age: { age } < /p> <
-            p > Hair Color: { hairColor } < /p>  < / >
+            h1 > { lastName }, { firstName } < /h1>   <
+            p > Age: { age } < /p>  <
+            p > Hair Color: { hairColor } < /p > < / >
         );
     }
 }
