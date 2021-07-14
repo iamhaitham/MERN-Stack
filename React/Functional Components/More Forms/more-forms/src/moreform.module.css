@@ -1,0 +1,11 @@
+.errors{
+    color:red;
+}
+
+.myForm{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:Center;
+    align-content:center;
+}
