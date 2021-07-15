@@ -1,0 +1,21 @@
+.myForm{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.box{
+    height:100px;
+    width:100px;
+}
+
+.displayedBoxes{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    margin-top:10%;
+}
+
