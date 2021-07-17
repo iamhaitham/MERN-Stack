@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+  width: 950px;
+  background-color: #dddddd;
+  margin: 0px auto;
+}
+
+.Header{
+  height: 150px;
+  width:925px;
+  background-color: #6aa84f;
+  margin-left:1.3%
+}
+
+.MainNavigationContainer{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin: 2% 0%;
+  padding-bottom:2%;
+}
+
+.Navigation{
+  min-height: 300px;
+  width: 200px;
+  background-color: #6fa8dc;
+}
+
+.Main{
+  min-height: 400px;
+  width: 700px;
+  background-color:#e06666;
+  display:flex;
+  flex-direction:column;
+}
+
+.SubContentsContainer{
+display:flex;
+flex-direction:row;
+justify-content: space-evenly;
+margin:2% 0%;
+}
+
+.SubContents{
+  min-height: 200px;
+  width: 210px;
+  background-color: #ffd966;
+}
+
+.Advertisement{
+  min-height: 120px;
+  width: 666px;
+  background-color: #b4a7d6;
+  margin:5% 0% 0% 2.5%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
