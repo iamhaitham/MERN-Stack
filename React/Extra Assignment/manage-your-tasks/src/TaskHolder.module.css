@@ -1,0 +1,22 @@
+.taskHolder{
+    padding:10px;
+    border:2px solid black;
+    width:150%;
+    display:flex;
+    flex-direction:column;
+    justify-content:Center;
+    align-items:center;
+    align-content:center;
+}
+
+.spanInTaskHolder{
+    margin-right:10px;
+}
+
+.singleTask{
+    margin-bottom:2%;
+}
+
+.heading{
+    text-align:left;
+}
