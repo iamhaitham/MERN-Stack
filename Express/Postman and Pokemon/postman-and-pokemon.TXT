@@ -1,0 +1,15 @@
+(1)
+https://pokeapi.co/api/v2/pokemon/15/
+************************************************
+(2)
+https://pokeapi.co/api/v2/pokemon/125
+************************************************
+(3)
+https://pokeapi.co/api/v2/pokemon/eevee
+************************************************
+(4)
+https://pokeapi.co/api/v2/pokemon/voltorb
+************************************************
+(5)
+https://pokeapi.co/api/v2/pokemon/necrozma
+************************************************
