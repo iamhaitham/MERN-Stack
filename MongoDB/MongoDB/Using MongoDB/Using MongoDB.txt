@@ -1,0 +1,68 @@
+(1)
+use my_first_db
+**************************************
+(2)
+db.createCollection("students")
+**************************************
+(3)
+db.students.insert({name:"John Doe",home_state:"Florida",favourite_number:4,birthday:{month:5,day:5,year:2005}})
+db.students.insert({name:"William Williams",home_state:"Hawaii",favourite_number:2,birthday:{month:1,day:27,year:1999}})
+db.students.insert({name:"Jane Miller",home_state:"Alaska",favourite_number:0,birthday:{month:12,day:31,year:2000}})
+db.students.insert({name:"Tom Jerry",home_state:"New Jersey",favourite_number:9,birthday:{month:7,day:25,year:1973}})
+db.students.insert({name:"George Doe",home_state:"Colorado",favourite_number:9,birthday:{month:8,day:15,year:1959}})
+**************************************
+(4)
+db.students.find().pretty()
+**************************************
+(5)
+db.students.find({$or:[{home_state:"Washington"},{home_state:"Colorado"}]})
+**************************************
+(6)
+db.students.find({favourite_number:{$gt:3}})
+**************************************
+(7)
+db.students.find({favourite_number:{$lte:10}})
+**************************************
+(8)
+db.students.find({$and:[{favourite_number:{$gte:1}},{favourite_number:{$lte:9}}]})
+**************************************
+(9)
+db.students.update({},{$set:{interests:["coding","brunch","MongoDB"]}},false,true)
+**************************************
+(10)
+db.students.update({"_id" : ObjectId("60ff1b1847e7778e2b06b4f4")},{$push:{interests:"php"}})
+db.students.update({"_id" : ObjectId("60ff1b1847e7778e2b06b4f5")},{$push:{interests:"perl"}})
+db.students.update({"_id" : ObjectId("60ff1b1847e7778e2b06b4f6")},{$push:{interests:"ruby"}})
+db.students.update({"_id" : ObjectId("60ff1b1847e7778e2b06b4f7")},{$push:{interests:"java"}})
+db.students.update({"_id" : ObjectId("60ff1b1847e7778e2b06b4f8")},{$push:{interests:"c#"}})
+**************************************
+(11)
+db.students.update({"_id" : ObjectId("60ff1b1847e7778e2b06b4f8")},{$push:{interests:"taxes"}})
+**************************************
+(12)
+db.students.update({"_id" : ObjectId("60ff1b1847e7778e2b06b4f8")},{$pull:{interests:"taxes"}})
+**************************************
+(13)
+db.students.remove({home_state:"Colorado"})
+**************************************
+(14)
+db.students.remove({name:"Tom Jerry"})
+**************************************
+(15)
+db.students.remove({favourite_number:{$gt:5}},true)
+**************************************
+(16)
+db.students.update({},{$set:{number_of_belts:0}},false,true)
+**************************************
+(17)
+db.students.update({home_state:"Alaska"},{$inc:{number_of_belts:1}})
+**************************************
+(18)
+db.students.update({},{$rename:{"number_of_belts":"belts_earned"}},false,true)
+**************************************
+(19)
+db.students.update({},{$unset:{favourite_number:""}},false,true)
+**************************************
+(20)
+db.students.update({},{$currentDate:{"updated_on":{$type:"date"}}},false,true)
+**************************************
